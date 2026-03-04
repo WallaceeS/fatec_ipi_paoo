@@ -1,21 +1,86 @@
-//closure
-function eAgora(){
-    let cont = 1
-    function f1(){
-        console.log(cont)
-    }
-    cont++
-    function f2(){
-        console.log(cont)
-    }
-    cont++
-    return (f1, f2)
+//objetos Javascript
+
+
+let calculadora = {
+    somar: (a,b) => a +b,
+    subtrair: function(a,b){return a - b}
 }
 
-let res = eAgora()
+let res1 = calculadora.somar(1,2)
+console.log(res1)
+console.log(calculadora.subtrair(2,1))
+console.log(calculadora['subtrair'](2,1))
 
-res.f1()
-res.f2()
+//Uma concessionária tem CNPJ e um endereço. Ela possui alguns carros em estoque. Cada carro
+//tem marca, modelo e ano de fabricação
+
+// let concessionaria = {
+//     cnpj: '00.000.000/0001-00',
+//     endereco: {
+//         logradouro: 'Avenida B',
+//         numero: 1,
+//         bairro: 'Vila J'
+//     },
+//     carro: [
+//         { marca: 'mercedes', modelo: 'amg', ano: 2020, proprietarios: [{ nome: 'João', telefone: 65895654 }, { nome: 'Maria', telefone: 45678945132 }] },
+
+//         { marca: 'Honda', modelo: 'HR-V', ano: 2021, proprietarios: [{ nome: 'Ana', telefone: 457897652 }] }
+
+//     ]
+
+// }
+
+
+
+
+//uma pessoa se chama Maria, tem 21 anos e mora na Rua B , número 20
+// let pessoa = {
+//     nome: 'Maria',
+//     idade: 21,
+//     endereco: {
+//         logradouro: 'Rua B',
+//         numero: 20,
+//         bairro: 'Vila J'
+//     }
+// }
+// console.log(`${pessoa.nome} mora na ${pessoa.endereco.logradouro}`)
+// console.log(`${pessoa['nome']} tem ${pessoa['idade']} anos. Ela mora na ${pessoa.endereco['logradouro']}, número ${pessoa['endereco'].numero}`)
+
+
+//uma pessoa cujo nome é João e tem 17 anos
+
+
+
+// let pessoa = {
+//     nome: 'João',
+//     idade: 17
+// }
+
+
+
+
+
+
+//closure
+
+
+// function eAgora(){
+//     let cont = 1
+//     function f1(){
+//         console.log(cont)
+//     }
+//     cont++
+//     function f2(){
+//         console.log(cont)
+//     }
+//     cont++
+//     return (f1, f2)
+// }
+
+// let res = eAgora()
+
+// res.f1()
+// res.f2()
 
 
 
@@ -134,7 +199,7 @@ res.f2()
 // }
 
 // function somar(a,b){
-//     return a + b 
+//     return a + b
 // }
 // console.log(somar(2,3))
 
@@ -202,7 +267,7 @@ res.f2()
 // listaDeLista[[],[],[]]
 
 
-//declaração de variaveis 
+//declaração de variaveis
 //const, let e var
 
 // var idade = 18
